@@ -1,0 +1,12 @@
+query GetMe {
+    me {
+        id
+        name
+        legalName
+        payoutMethods {
+            id
+            name
+            type
+        }
+    }
+}

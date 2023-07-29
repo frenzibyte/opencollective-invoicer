@@ -1,0 +1,16 @@
+mutation CreateExpense(
+    $expense: ExpenseCreateInput!
+)
+{
+    createExpense(
+        account: { slug: "ppy" }
+        expense: $expense
+        recurring: null
+    ) {
+        id
+        amountV2 {
+            value
+            currency
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "schema.graphql",
+  "documents": "**/*.graphql",
+  "extensions": {
+    "strawberryShake": {
+      "name": "OpenCollective",
+      "namespace": "OpenCollectiveInvoicer.GraphQL",
+      "url": "https://api.opencollective.com/graphql/v2",
+      "emitGeneratedCode": true,
+      "records": {
+        "inputs": false,
+        "entities": false
+      },
+      "transportProfiles": [
+        {
+          "default": "Http",
+          "subscription": "WebSocket"
+        }
+      ]
+    }
+  }
+}
